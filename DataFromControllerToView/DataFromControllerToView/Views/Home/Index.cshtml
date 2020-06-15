@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Home :: Index</h1>
+
+<br />
+<div>We have 3 controller in this project Home, Default1, Default2</div>
+<br />
+<div><a href="Default1/ViewBagDemo">Default1 :: ViewBagDemo</a> - Put data in ViewBag</div>
+<div><a href="Default1/ViewDataDemo">Default1 :: ViewDataDemo</a> - Put data in ViewData</div>
+<div><a href="Default1/TempDataDemoSend">Default1 :: TempDataDemoSend</a> - Put data in TempData and redirect to another actionMethod(TempDataDemoGet) in Default2</div>
+<div><a href="Default2/TempDataDemoGet">Default2 :: TempDataDemoGet</a></div>
+<div><a href="Default1/SetSession">Default1 :: SetSession</a> - Put data in session and redirect to another actionMethod(GetSession) in Default2</div>
+<div><a href="Default2/GetSession">Default2 :: GetSession</a></div>
+<div><a href="Default1/ReadWriteCookie">Default1 :: ReadWriteCookie</a> - Check cookie to write or read</div>

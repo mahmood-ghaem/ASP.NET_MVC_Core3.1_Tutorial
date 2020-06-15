@@ -1,0 +1,9 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    ViewData["Title"] = "GetSession";
+}
+
+<h1>Default2 :: GetSession</h1>
+<br />
+<div>Your name is: @Context.Session.GetString("sessionuser")</div>
+
