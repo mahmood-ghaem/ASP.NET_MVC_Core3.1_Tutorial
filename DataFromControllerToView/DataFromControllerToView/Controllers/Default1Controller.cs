@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
+using DataFromControllerToView.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,11 +16,7 @@ namespace DataFromControllerToView.Controllers
             return View();
         }
 
-        public IActionResult ViewBagDemo()
-        {
-            ViewBag.myData1 = "Hello World! from ViewBag";
-            return View();
-        }
+
 
         public IActionResult ViewDataDemo()
         {
@@ -62,7 +60,22 @@ namespace DataFromControllerToView.Controllers
             }
         }
 
+        public IActionResult ViewBagObject()
+        {
+            dynamic myDynamicData = new ExpandoObject();
+            myDynamicData.id = 1;
+            myDynamicData.stringValue = "Some Text Sample";
+            ViewBag.sendDynamicData = myDynamicData;
 
+            MyUser myUser = new MyUser()
+            {
+                age = 20,
+                firstName = "Reza",
+                lastName = "Razavi"
+            };
+            ViewBag.sendUser = myUser;
+            return View();
+        }
 
 
 
