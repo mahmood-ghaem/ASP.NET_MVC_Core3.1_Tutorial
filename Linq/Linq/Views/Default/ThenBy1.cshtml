@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Linq.Controllers.Student1>
+@{
+    ViewData["Title"] = "ThenBy1";
+}
+
+<h1>ThenBy1</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item.Name - @item.Age - @item.Average</div>
+}

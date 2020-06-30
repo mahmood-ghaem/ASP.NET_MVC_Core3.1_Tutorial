@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Linq.Controllers.Employee1>
+@{
+    ViewData["Title"] = "LinqOfType2";
+}
+
+<h1>LinqOfType2</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item.Name - @item.Gender - @item.HoursWorked</div>
+}

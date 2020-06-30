@@ -1,0 +1,15 @@
+﻿@model ILookup<string, Linq.Controllers.Employee3>
+@{
+    ViewData["Title"] = "LinqToLookup";
+}
+
+<h1>LinqToLookup</h1>
+
+@foreach (var item in Model)
+{
+    <div><b>@item.Key</b></div>
+    @foreach (var emp in item)
+    {
+        <div>&ensp;@emp.Name &ndash; @emp.Country</div>
+    }
+}

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Linq.Controllers.Student2>
+@{
+    ViewData["Title"] = "OrderByDescending1";
+}
+
+<h1>OrderByDescending1</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item.Name</div>
+}

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Linq.Controllers.Departmant1Employee2_new>
+@{
+    ViewData["Title"] = "LinqGroupJoin";
+}
+
+<h1>LinqGroupJoin</h1>
+
+@foreach (var item in Model)
+{
+    @item.DepName
+    <div>
+    @foreach (var emp in item.EmpNames)
+    {
+        <span>@emp.EmpId</span> <span>@emp.Name</span> 
+    }
+    </div>
+}
+
+<div>عناصر را بر اساس مجموعه ی چپ و راست، به ترتیب گروه مرتب سازی می کند</div>

@@ -1,0 +1,12 @@
+﻿@model Dictionary<int, String>
+@{
+    ViewData["Title"] = "LinqToDictionary";
+}
+
+<h1>LinqToDictionary</h1>
+
+@foreach (var item in Model)
+{
+    <div><b>@item.Key</b> @item.Value</div>
+
+}

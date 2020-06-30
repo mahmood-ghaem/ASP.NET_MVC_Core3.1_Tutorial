@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Linq.Controllers.Departmant1Employee2>
+@{
+    ViewData["Title"] = "LinqLeftOuterJoin";
+}
+
+<h1>LinqLeftOuterJoin</h1>
+
+@foreach (var item in Model)
+{
+    <div><span>@item.EmpName</span> <span>@item.DepName</span></div>
+}
+
+<div> عناصر را از مجموعه سمت چپ و عناصر مربوطه از مجموعه سمت راست باز می گرداند</div>
+<div><img width="300" src="~/images/left-outer-join.gif" /></div>

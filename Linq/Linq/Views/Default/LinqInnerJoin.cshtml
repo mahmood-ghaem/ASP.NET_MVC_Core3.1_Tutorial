@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Linq.Controllers.Departmant1Employee2>
+@{
+    ViewData["Title"] = "LinqInnerJoin";
+}
+
+<h1>LinqInnerJoin</h1>
+
+
+
+@foreach (var item in Model)
+{
+    <div><span>@item.EmpName</span> <span>@item.DepName</span></div>
+}
+
+<div>عناصری را از مجموعه سمت چپ و راست بر اساس یک فیلد مشترک باز می گرداند</div>
+<div><img width="300" src="~/images/inner-join.png" /></div>

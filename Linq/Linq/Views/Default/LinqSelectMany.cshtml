@@ -1,0 +1,19 @@
+﻿@*@model IEnumerable<String>*@
+@model IEnumerable<List<string>>
+@{
+    ViewData["Title"] = "LinqSelectMany";
+}
+
+<h1>LinqSelectMany</h1>
+@foreach (var item in Model)
+{
+
+    <div>
+        @foreach (var item1 in item)
+        {
+        <span>@item1</span>
+        }
+    </div>
+
+}
+

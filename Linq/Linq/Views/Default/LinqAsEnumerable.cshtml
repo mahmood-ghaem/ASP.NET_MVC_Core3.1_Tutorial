@@ -1,0 +1,11 @@
+﻿@model IEnumerable<string>
+@{
+    ViewData["Title"] = "LinqAsEnumerable";
+}
+
+<h1>LinqAsEnumerable</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item</div>
+}

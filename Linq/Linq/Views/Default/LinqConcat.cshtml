@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+@{
+    ViewData["Title"] = "LinqConcat";
+}
+
+<h1>LinqConcat</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item</div>
+}
+<div dir="rtl">این متد تا حدودی شبیه به Union است با این تفاوت که متد Union عناصر تکراری را حذف می کرد و در مجموعه ی جدید عنصری که دارای تکرار بود فقط یک بار در نظر گرفته می شد.</div>
+<div><img src="~/images/concat.png" /></div>

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Linq.Controllers.Student1>
+@{
+    ViewData["Title"] = "LinqSelect";
+}
+
+<h1>LinqSelect</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item.Name :: @item.Age</div>
+}

@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+@{
+    ViewData["Title"] = "LinqExcept";
+}
+
+<h1>LinqExcept</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item</div>
+}
+<div>عضوی (اعضایی) که در مجموعه اول موجود ولی در مجموعه ی دوم موجود نیستند را بر می گرداند (عضو متفاوت را مشخص می کند).</div>
+<div><img src="~/images/E-1.png" /></div>

@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Linq.Controllers.Departmant1Employee2>
+
+@{
+    ViewData["Title"] = "LinqCrossJoin";
+}
+
+<h1>LinqCrossJoin</h1>
+
+@foreach (var item in Model)
+{
+    <div><span>@item.EmpName</span> <span>@item.DepName</span></div>
+}
+
+<div> هر عنصر از مجموعه ی سمت چپ را به تمامی عناصر مجموعه ی سمت راست اضافه می کند (ربط می دهد)</div>
+<div><img width="300" src="~/images/cross-join.jpg" /></div>

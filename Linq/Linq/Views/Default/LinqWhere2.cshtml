@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Linq.Controllers.Student1>
+@{
+    ViewData["Title"] = "LinqWhere2";
+}
+
+<h1>LinqWhere2</h1>
+
+@foreach (var item in Model)
+{
+    <div>@item.Name - @item.Age - @item.Average</div>
+}

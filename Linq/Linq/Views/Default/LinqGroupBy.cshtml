@@ -1,0 +1,13 @@
+﻿@*@model IEnumerable<IGrouping<string, Linq.Controllers.Student3>>*@
+@model System.Linq.IGrouping<Linq.Controllers.Student3, string> 
+@{
+    ViewData["Title"] = "LinqGroupBy";
+}
+
+<h1>LinqGroupBy</h1>
+
+@foreach (var item in Model)
+{
+    @*<div><b>@Model</b></div>
+    <div>@item.Name - item.Gender</div>*@
+}
